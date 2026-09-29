@@ -415,7 +415,7 @@ footer {
    ESTILO DA PÁGINA DOS ANABOLIZANTES (MARCA D'ÁGUA DESTACADA)
    ========================================================================== */
 .body-anabolizantes {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), 
+    background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), 
                       url('https://conteudo.imguol.com.br/c/entretenimento/d1/2023/05/02/anabolizante-hormonio-performance-esportiva-1683033629614_v2_4x3.jpg');
     background-position: center;
     background-repeat: no-repeat;
