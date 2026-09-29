@@ -618,3 +618,105 @@ footer {
     text-decoration: none;
     font-weight: 600;
 }
+
+/* ==========================================================================
+   ESTILIZAÇÃO DO BOTÃO E SEÇÃO DE ALERTA DE ANABOLIZANTES (INDEX.HTML)
+   ========================================================================== */
+
+/* Caixa container de alerta na página principal */
+.alerta-box {
+    background-color: #fff5f5;
+    border: 2px solid #cc0000;
+    border-radius: 12px;
+    padding: 35px 25px;
+    box-shadow: 0 4px 20px rgba(204, 0, 0, 0.08);
+}
+
+.alerta-header h2 {
+    color: #cc0000;
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+}
+
+.alerta-descricao {
+    color: #333333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Centralização da área do botão */
+.alerta-btn-wrapper {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* O Botão Destaque Personalizado estilo Alerta de Emergência */
+.btn-alerta-destaque {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    background: linear-gradient(135deg, #cc0000 0%, #880000 100%);
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 50px;
+    border: 1px solid #ff4d4d;
+    box-shadow: 0 6px 20px rgba(204, 0, 0, 0.35);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+}
+
+/* Efeito Hover (passar o mouse) */
+.btn-alerta-destaque:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(204, 0, 0, 0.5);
+    background: linear-gradient(135deg, #e60000 0%, #a00000 100%);
+    color: #ffffff !important;
+}
+
+/* Ícone de Sirene com Animação de Pulso */
+.btn-alerta-destaque .btn-icon {
+    font-size: 1.4rem;
+    animation: pulso-alerta 1.8s infinite;
+}
+
+/* Estrutura do Texto Interno */
+.btn-alerta-destaque .btn-texto {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.btn-alerta-destaque .btn-texto strong {
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+.btn-alerta-destaque .btn-texto small {
+    font-size: 0.8rem;
+    color: #ffcccc;
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+/* Seta animada no final do botão */
+.btn-alerta-destaque .btn-seta {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-alerta-destaque:hover .btn-seta {
+    transform: translateX(6px);
+}
+
+/* Animação suave para o ícone de sirene */
+@keyframes pulso-alerta {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
