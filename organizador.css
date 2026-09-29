@@ -24,9 +24,9 @@ body {
     align-items: center;
     padding: 15px 8%;
     background-color: rgba(255, 255, 255, 0.95);
-    position: fixed; /* Fixa o menu na tela ao rolar a página */
+    position: fixed;
     top: 0;
-    left: 0;        /* Alinha o menu no canto esquerdo da tela */
+    left: 0;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -382,7 +382,6 @@ footer {
                 url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNM5jFFbpHfGmfrovvW8AQjZjcghE34X9YQ2zP1Lc4Rg&s=10') center/cover no-repeat;
 }
 
-/* Card de alerta na página dos treinos de jovens */
 .card-alert {
     border-top: 4px solid #ff3e3e;
     background-color: #fff5f5;
@@ -395,8 +394,6 @@ footer {
 /* ==========================================================================
    ESTILO DA PÁGINA DOS ANABOLIZANTES
    ========================================================================== */
-
-/* Fundo com imagem de marca-d'água clara */
 .body-anabolizantes {
     background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), 
                       url('https://conteudo.imguol.com.br/c/entretenimento/d1/2023/05/02/anabolizante-hormonio-performance-esportiva-1683033629614_v2_4x3.jpg');
@@ -418,7 +415,6 @@ footer {
     background-color: #990000 !important;
 }
 
-/* Banner de Topo */
 .hero-anabolizantes {
     background-color: #111111;
     color: #ffffff;
@@ -442,7 +438,6 @@ footer {
     margin: 10px auto 0 auto;
 }
 
-/* Caixa Vermelha de Alerta */
 .alerta-box-expansivo {
     background-color: #fff0f0;
     border: 2px solid #cc0000;
@@ -471,7 +466,6 @@ footer {
     margin-top: 15px;
 }
 
-/* Cards de Substâncias */
 .title-danger {
     color: #cc0000;
 }
@@ -537,7 +531,6 @@ footer {
     font-size: 0.95rem;
 }
 
-/* Tabela Comparativa Simples */
 .tabela-wrapper {
     overflow-x: auto;
     margin-top: 15px;
@@ -565,7 +558,6 @@ footer {
     color: #333333;
 }
 
-/* Caixa Final de Conclusão */
 .text-center-box {
     text-align: center;
     background: #ffffff;
@@ -620,10 +612,8 @@ footer {
 }
 
 /* ==========================================================================
-   ESTILIZAÇÃO DO BOTÃO E SEÇÃO DE ALERTA DE ANABOLIZANTES (INDEX.HTML)
+   BOTÃO TEMÁTICO: ALERTA DE ANABOLIZANTES (BIOHAZARD STYLE)
    ========================================================================== */
-
-/* Caixa container de alerta na página principal */
 .alerta-box {
     background-color: #fff5f5;
     border: 2px solid #cc0000;
@@ -645,78 +635,63 @@ footer {
     margin-bottom: 25px;
 }
 
-/* Centralização da área do botão */
 .alerta-btn-wrapper {
-    margin-top: 30px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0 15px 0;
 }
 
-/* O Botão Destaque Personalizado estilo Alerta de Emergência */
-.btn-alerta-destaque {
+.btn-anabolicos-hazard {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 14px;
-    background: linear-gradient(135deg, #cc0000 0%, #880000 100%);
-    color: #ffffff !important;
+    gap: 12px;
+    padding: 18px 36px;
+    background: linear-gradient(135deg, #120202 0%, #2a0000 50%, #500000 100%);
+    color: #ff3333 !important;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     text-decoration: none;
-    padding: 16px 32px;
-    border-radius: 50px;
-    border: 1px solid #ff4d4d;
-    box-shadow: 0 6px 20px rgba(204, 0, 0, 0.35);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 2px solid #ff1744;
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(255, 23, 68, 0.35), inset 0 0 10px rgba(255, 23, 68, 0.15);
+    transition: all 0.25s ease-in-out;
     cursor: pointer;
 }
 
-/* Efeito Hover (passar o mouse) */
-.btn-alerta-destaque:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 10px 25px rgba(204, 0, 0, 0.5);
-    background: linear-gradient(135deg, #e60000 0%, #a00000 100%);
+.btn-anabolicos-hazard:hover {
+    background: linear-gradient(135deg, #ff1744 0%, #b20000 100%);
     color: #ffffff !important;
+    border-color: #ff6666;
+    box-shadow: 0 0 30px rgba(255, 23, 68, 0.8), inset 0 0 12px rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px) scale(1.02);
 }
 
-/* Ícone de Sirene com Animação de Pulso */
-.btn-alerta-destaque .btn-icon {
+.btn-anabolicos-hazard .btn-icon {
     font-size: 1.4rem;
-    animation: pulso-alerta 1.8s infinite;
+    animation: pulso-biohazard 1.5s infinite alternate;
 }
 
-/* Estrutura do Texto Interno */
-.btn-alerta-destaque .btn-texto {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    line-height: 1.2;
-}
-
-.btn-alerta-destaque .btn-texto strong {
-    font-size: 1.1rem;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    color: #ffffff;
-}
-
-.btn-alerta-destaque .btn-texto small {
-    font-size: 0.8rem;
-    color: #ffcccc;
-    font-weight: 400;
-    margin-top: 3px;
-}
-
-/* Seta animada no final do botão */
-.btn-alerta-destaque .btn-seta {
+.btn-anabolicos-hazard .btn-seta {
     font-size: 1.2rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.25s ease;
 }
 
-.btn-alerta-destaque:hover .btn-seta {
-    transform: translateX(6px);
+.btn-anabolicos-hazard:hover .btn-seta {
+    transform: translateX(8px);
 }
 
-/* Animação suave para o ícone de sirene */
-@keyframes pulso-alerta {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.25); }
-    100% { transform: scale(1); }
+@keyframes pulso-biohazard {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
 }
