@@ -237,6 +237,26 @@ body {
     color: #aaa;
 }
 
+.card-autor {
+    background-color: #ffffff;
+    border-left: 4px solid #ff3e3e;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+.card-autor h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.card-autor p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
 /* ==========================================================================
    IMAGENS DOS SUPLEMENTOS
    ========================================================================== */
@@ -392,10 +412,10 @@ footer {
 }
 
 /* ==========================================================================
-   ESTILO DA PÁGINA DOS ANABOLIZANTES
+   ESTILO DA PÁGINA DOS ANABOLIZANTES (MARCA D'ÁGUA DESTACADA)
    ========================================================================== */
 .body-anabolizantes {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), 
+    background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)), 
                       url('https://conteudo.imguol.com.br/c/entretenimento/d1/2023/05/02/anabolizante-hormonio-performance-esportiva-1683033629614_v2_4x3.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -439,11 +459,12 @@ footer {
 }
 
 .alerta-box-expansivo {
-    background-color: #fff0f0;
+    background-color: rgba(255, 240, 240, 0.95);
     border: 2px solid #cc0000;
     border-radius: 10px;
     padding: 25px;
     margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(204, 0, 0, 0.1);
 }
 
 .alerta-header h2 {
@@ -471,7 +492,7 @@ footer {
 }
 
 .card-substancia {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.95);
     border-top: 4px solid #cc0000;
     padding: 20px;
     border-radius: 8px;
@@ -507,7 +528,7 @@ footer {
 }
 
 .bg-dark-anabolizantes {
-    background-color: #1d0707;
+    background-color: rgba(29, 7, 7, 0.95);
     padding: 40px 20px;
     border-radius: 12px;
     margin: 30px 0;
@@ -539,7 +560,7 @@ footer {
 .tabela-comparativa {
     width: 100%;
     border-collapse: collapse;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
     overflow: hidden;
 }
@@ -560,7 +581,7 @@ footer {
 
 .text-center-box {
     text-align: center;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.95);
     padding: 30px 20px;
     border-radius: 10px;
     border: 1px solid #dddddd;
